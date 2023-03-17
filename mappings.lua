@@ -13,10 +13,9 @@ return {
     ["<leader>bn"] = { "<cmd>tabnew<cr>", desc = "New tab" },
     ["<leader>bD"] = {
       function()
-        require("astronvim.utils.status").heirline.buffer_picker(function(bufnr)
-          require("astronvim.utils.buffer").close(
-            bufnr)
-        end)
+        require("astronvim.utils.status").heirline.buffer_picker(
+          function(bufnr) require("astronvim.utils.buffer").close(bufnr) end
+        )
       end,
       desc = "Pick to close",
     },
@@ -27,9 +26,14 @@ return {
     -- ["<C-s>"] = { ":w!<cr>", desc = "Save File" },  -- change description but the same command
     --
     ["<leader>te"] = { function() utils.toggle_term_cmd "iex" end, desc = "ToggleTerm Elixir IEx" },
+    ["<leader>P"] = { '"_dP', desc = "Paste without copying" },
   },
   t = {
     -- setting a mapping to false will disable it
     -- ["<esc>"] = false,
+  },
+  v = {
+    ["J"] = { ":m '>+1<CR>gv=gv", desc = "Move highlighted block down" },
+    ["K"] = { ":m '<-2<CR>gv=gv", desc = "Move highlighted block up" },
   },
 }
