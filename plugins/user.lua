@@ -9,4 +9,6 @@ return {
   --     require("lsp_signature").setup()
   --   end,
   -- },
+  { "jesseduffield/lazygit", enabled = false },
+  -- { "lewis6991/gitsigns.nvim", enabled = false },
 }

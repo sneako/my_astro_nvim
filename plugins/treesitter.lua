@@ -16,7 +16,6 @@ return {
       "hcl",
       "help",
       "lua",
-      "lua",
       "python",
       "ruby",
       "rust",

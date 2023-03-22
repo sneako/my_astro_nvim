@@ -10,10 +10,12 @@ return {
         "tsserver",
         "gopls",
         "lua_ls",
+        "html",
         "elixirls",
         "ruby_ls",
         "sorbet",
-        "bashls"
+        "bashls",
+        "yamlls",
       },
     },
   },

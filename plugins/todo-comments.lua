@@ -4,6 +4,6 @@ return {
     dependencies = {
       "nvim-lua/plenary.nvim",
     },
-    config = true,
+    event = "User AstroFile",
   },
 }
