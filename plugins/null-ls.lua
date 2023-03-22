@@ -14,9 +14,8 @@ return {
       null_ls.builtins.code_actions.shellcheck,
       null_ls.builtins.diagnostics.actionlint,
       null_ls.builtins.diagnostics.checkmake,
-      null_ls.builtins.diagnostics.markdownlint,
       null_ls.builtins.diagnostics.protolint,
-      null_ls.builtins.diagnostics.terraform_validate
+      null_ls.builtins.diagnostics.terraform_validate,
     }
     return config -- return final config table
   end,
